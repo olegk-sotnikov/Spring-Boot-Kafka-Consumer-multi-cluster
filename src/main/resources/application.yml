@@ -1,2 +1,13 @@
 server:
    port: 9091
+
+kafka:
+  consumer:
+    local1:
+      server-config: ${LOCAL1_SERVER_CONFIG}
+      group-id: ${LOCAL1_GROUP_ID}
+      topic-name: ${LOCAL1_TOPIC_NAME}
+    local2:
+      server-config: ${LOCAL2_SERVER_CONFIG}
+      group-id: ${LOCAL2_GROUP_ID}
+      topic-name: ${LOCAL2_TOPIC_NAME}
